@@ -1,2 +1,65 @@
 /* Your styles go here */
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: #efd28d;
+  color: #a30000;
+}
+
+.hero {
+  position: relative;
+  min-height: 85vh;
+  overflow: hidden;
+}
+
+.hero h1 {
+  font-size: 7vw;
+}
+
+.hero h3 {
+  margin-top: auto;
+}
+
+.biker {
+  position: absolute;
+  left: 15vw;
+  top: 20vh;
+  z-index: -1;
+}
+
+footer {
+  background-color: #004777;
+}
+
+footer a {
+  text-decoration: none;
+  color: #efd28d;
+}
+
+@media only screen and (min-width: 800px) {
+  .biker {
+    left: 40vw;
+    width: 60%;
+  }
+}
+
+#scroll-button {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: #00afb5;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  color: #efd28d;
+  font-size: 2em;
+  transition: all 0.5s ease-in-out;
+}
+
+.scroll-in {
+  right: 20px !important;
+}
+
+.scroll-out {
+  right: -100px !important;
+}

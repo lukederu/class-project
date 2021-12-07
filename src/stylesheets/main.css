@@ -10,13 +10,16 @@ body {
   position: relative;
   min-height: 85vh;
   overflow: hidden;
+  background-color: rgb(182, 178, 157);
 }
 
 .hero h1 {
   font-size: 7vw;
+  z-index: 1;
 }
 
 .hero h3 {
+  z-index: 1;
   margin-top: auto;
 }
 
@@ -24,7 +27,7 @@ body {
   position: absolute;
   left: 15vw;
   top: 20vh;
-  z-index: -1;
+  z-index: 0;
 }
 
 footer {
@@ -32,6 +35,15 @@ footer {
 }
 
 footer a {
+  text-decoration: none;
+  color: #efd28d;
+}
+
+header {
+  background-color: #004777;
+}
+
+header a {
   text-decoration: none;
   color: #efd28d;
 }

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Project Starter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Don't change the paths of the following two lines - They are produced by webpack-->
+    <link rel="stylesheet" href="stylesheets/main.css" />
+  </head>
+
+  <body class="text-center" onload="init()">
+    <h1 class="m-3">Random Bike Races!</h1>
+
+    <div class="course">
+      <button class="btn btn-primary m-4" onclick="race()">New Race!</button>
+
+      <div class="road" id="road"></div>
+
+      <img src="./images/mtb-bike.png" class="bike" alt="" id="slow-bike" />
+      <img src="./images/motor-bike.png" class="bike" alt="" id="fast-bike" />
+    </div>
+
+    <footer class="d-flex flex-column align-items-center m-0 p-2">
+      <a href="/index.html">Home</a>
+      <a href="/bikes.html">Bikes</a>
+      <a href="/components.html">Components</a>
+      <a href="/trails.html">Trails</a>
+      <a href="/races.html">Races</a>
+    </footer>
+
+    <!-- Leave the following line as is at the end of body -->
+    <script src="javascripts/main.js"></script>
+  </body>
+</html>

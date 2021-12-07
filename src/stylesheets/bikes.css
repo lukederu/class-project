@@ -1,0 +1,49 @@
+.course {
+  overflow: hidden;
+  min-height: 80vh;
+  min-width: 100vw;
+  position: relative;
+}
+
+.road {
+  background-color: black;
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  top: 60%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+  flex-shrink: 1 0 auto;
+}
+
+.line {
+  min-width: 30px;
+  height: 2px;
+  background-color: white;
+  margin-top: 15px;
+  z-index: 1;
+}
+
+.bike {
+  width: 100px;
+  position: absolute;
+  z-index: 2;
+}
+#slow-bike {
+  left: 100%;
+  top: 54%;
+}
+#fast-bike {
+  left: 100%;
+  top: 58%;
+}
+
+@keyframes race {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 100%;
+  }
+}
